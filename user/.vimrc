@@ -48,6 +48,7 @@ set list
 " cd ~/.vim/plugged/YouCompleteMe
 " sudo apt-get install -y cmake
 " ./install.py --ts-completer
+" pip install flake8
 
 " CREDITS:
 " https://youtu.be/n9k9scbTuvQ
