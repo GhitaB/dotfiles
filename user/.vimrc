@@ -22,7 +22,7 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'morhetz/gruvbox'
 Plug 'airblade/vim-gitgutter'
-Plug 'nvie/vim-flake8'
+Plug 'dense-analysis/ale'
 " Plug 'jremmen/vim-ripgrep'
 " Plug 'tpope/vim-fugitive'
 " Plug 'leafgarland/typescript-vim'
