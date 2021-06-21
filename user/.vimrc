@@ -1,5 +1,6 @@
 syntax on
 
+set belloff=all
 set noerrorbells
 set tabstop=4 softtabstop=4
 set shiftwidth=4
@@ -24,6 +25,7 @@ Plug 'morhetz/gruvbox'
 Plug 'airblade/vim-gitgutter'
 Plug 'dense-analysis/ale'
 Plug 'preservim/nerdtree'
+Plug 'tomtom/tcomment_vim'
 " Plug 'jremmen/vim-ripgrep'
 " Plug 'tpope/vim-fugitive'
 " Plug 'leafgarland/typescript-vim'
@@ -38,14 +40,15 @@ call plug#end()
 colorscheme gruvbox
 set background=dark
 
-"set listchars=eol:¬,tab:>·,trail:~,extends:>,precedes:<,space:␣
-set listchars=tab:»\ ,extends:›,precedes:‹,nbsp:·,trail:·
-set list
-
 nnoremap <leader>n :NERDTreeFocus<CR>
 nnoremap <C-n> :NERDTree<CR>
 nnoremap <C-t> :NERDTreeToggle<CR>
 nnoremap <C-f> :NERDTreeFind<CR>
+
+"set listchars=eol:¬,tab:>·,trail:~,extends:>,precedes:<,space:␣
+set listchars=tab:»\ ,extends:›,precedes:‹,nbsp:·,trail:·
+set list
+
 
 " INSTALL:
 " mkdir ~/.vim/undodir   in case it doen't exist
