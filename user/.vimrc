@@ -23,6 +23,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'morhetz/gruvbox'
 Plug 'airblade/vim-gitgutter'
 Plug 'dense-analysis/ale'
+Plug 'preservim/nerdtree'
 " Plug 'jremmen/vim-ripgrep'
 " Plug 'tpope/vim-fugitive'
 " Plug 'leafgarland/typescript-vim'
@@ -40,6 +41,11 @@ set background=dark
 "set listchars=eol:¬,tab:>·,trail:~,extends:>,precedes:<,space:␣
 set listchars=tab:»\ ,extends:›,precedes:‹,nbsp:·,trail:·
 set list
+
+nnoremap <leader>n :NERDTreeFocus<CR>
+nnoremap <C-n> :NERDTree<CR>
+nnoremap <C-t> :NERDTreeToggle<CR>
+nnoremap <C-f> :NERDTreeFind<CR>
 
 " INSTALL:
 " mkdir ~/.vim/undodir   in case it doen't exist
