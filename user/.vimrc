@@ -26,6 +26,9 @@ Plug 'airblade/vim-gitgutter'
 Plug 'dense-analysis/ale'
 Plug 'preservim/nerdtree'
 Plug 'tomtom/tcomment_vim'
+Plug 'ap/vim-buftabline'
+Plug 'moll/vim-bbye'
+
 " Plug 'jremmen/vim-ripgrep'
 " Plug 'tpope/vim-fugitive'
 " Plug 'leafgarland/typescript-vim'
@@ -45,6 +48,12 @@ nnoremap <C-n> :NERDTree<CR>
 nnoremap <C-t> :NERDTreeToggle<CR>
 nnoremap <C-f> :NERDTreeFind<CR>
 let NERDTreeShowHidden=1
+
+set hidden
+nnoremap <C-right> :bnext<CR>
+nnoremap <C-left> :bprev<CR>
+
+:nnoremap Q :Bdelete<CR>
 
 "set listchars=eol:¬,tab:>·,trail:~,extends:>,precedes:<,space:␣
 set listchars=tab:»\ ,extends:›,precedes:‹,nbsp:·,trail:·
