@@ -25,20 +25,13 @@ Plug 'morhetz/gruvbox'
 Plug 'airblade/vim-gitgutter'
 Plug 'dense-analysis/ale'
 Plug 'preservim/nerdtree'
+Plug 'flwyd/nerdtree-harvest'
 Plug 'tomtom/tcomment_vim'
 Plug 'ap/vim-buftabline'
 Plug 'moll/vim-bbye'
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
-
-" Plug 'jremmen/vim-ripgrep'
-" Plug 'tpope/vim-fugitive'
-" Plug 'leafgarland/typescript-vim'
-" Plug 'vim-utils/vim-man'
-" Plug 'lyuts/vim-rtags'
 Plug 'git@github.com:kien/ctrlp.vim.git'
-" Plug 'git@github.com:Valloric/YouCompleteMe.git'
-" Plug 'mbbill/undotree'
 
 call plug#end()
 
