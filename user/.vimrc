@@ -28,6 +28,8 @@ Plug 'preservim/nerdtree'
 Plug 'tomtom/tcomment_vim'
 Plug 'ap/vim-buftabline'
 Plug 'moll/vim-bbye'
+Plug 'SirVer/ultisnips'
+Plug 'honza/vim-snippets'
 
 " Plug 'jremmen/vim-ripgrep'
 " Plug 'tpope/vim-fugitive'
