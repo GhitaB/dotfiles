@@ -32,7 +32,7 @@ Plug 'moll/vim-bbye'
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 Plug 'git@github.com:kien/ctrlp.vim.git'
-Plug 'ycm-core/YouCompleteMe'
+" Plug 'ycm-core/YouCompleteMe'
 Plug 'vim-airline/vim-airline'
 
 call plug#end()
