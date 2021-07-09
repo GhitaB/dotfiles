@@ -64,6 +64,23 @@ set list
 let g:indentLine_char = '│'
 let g:indentLine_color_term = 239
 
+" strips trailing whitespace at the end of files. this
+" is called on buffer write in the autogroup above.
+function! <SID>StripTrailingWhitespaces()
+  " save last search & cursor position
+  let _s=@/
+  let l = line(".")
+  let c = col(".")
+  %s/\s\+$//e
+  let @/=_s
+  call cursor(l, c)
+endfunction
+
+augroup configgroup
+  autocmd!
+  autocmd BufWritePre * :call <SID>StripTrailingWhitespaces()
+augroup END
+
 " INSTALL:
 " mkdir ~/.vim/undodir   in case it doen't exist
 " :source %              when you edit this file
@@ -76,3 +93,4 @@ let g:indentLine_color_term = 239
 " CREDITS:
 " https://youtu.be/n9k9scbTuvQ
 " https://www.reddit.com/r/vim/comments/4hoa6e/what_do_you_use_for_your_listchars/
+" https://github.com/tiberiuichim/yadm-dotfiles/blob/master/.config/nvim/init.vim
