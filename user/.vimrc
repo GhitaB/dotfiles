@@ -35,6 +35,10 @@ Plug 'git@github.com:kien/ctrlp.vim.git'
 " Plug 'ycm-core/YouCompleteMe'
 Plug 'vim-airline/vim-airline'
 
+" Show indent guides
+Plug 'Yggdroot/indentLine'
+let g:indentLine_fileTypeExclude = ['json', 'markdown', 'rst']
+
 call plug#end()
 
 colorscheme gruvbox
@@ -56,6 +60,8 @@ nnoremap <C-left> :bprev<CR>
 set listchars=tab:»\ ,extends:›,precedes:‹,nbsp:·,trail:·
 set list
 
+let g:indentLine_char = '│'
+let g:indentLine_color_term = 239
 
 " INSTALL:
 " mkdir ~/.vim/undodir   in case it doen't exist
