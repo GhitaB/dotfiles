@@ -34,6 +34,7 @@ Plug 'honza/vim-snippets'
 Plug 'git@github.com:kien/ctrlp.vim.git'
 " Plug 'ycm-core/YouCompleteMe'
 Plug 'vim-airline/vim-airline'
+Plug 'ap/vim-css-color'
 
 " Show indent guides
 Plug 'Yggdroot/indentLine'
