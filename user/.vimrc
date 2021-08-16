@@ -86,6 +86,7 @@ augroup configgroup
 augroup END
 
 " INSTALL:
+" Install vim-plug -> https://github.com/junegunn/vim-plug#installation
 " mkdir ~/.vim/undodir   in case it doen't exist
 " :source %              when you edit this file
 " :PlugInstall           to install the plugins
