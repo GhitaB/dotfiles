@@ -2,9 +2,9 @@ syntax on
 
 set belloff=all
 set noerrorbells
-set tabstop=4 softtabstop=4
-set shiftwidth=4
 set expandtab
+set tabstop=2   " not liking big tabs
+set shiftwidth=2
 set smartindent
 set nu
 set nowrap
@@ -80,6 +80,9 @@ endfunction
 augroup configgroup
   autocmd!
   autocmd BufWritePre * :call <SID>StripTrailingWhitespaces()
+
+  autocmd FileType python setlocal commentstring=#\ %s
+  autocmd Filetype python setlocal tabstop=4 shiftwidth=4 expandtab colorcolumn=89
 augroup END
 
 " INSTALL:
