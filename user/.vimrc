@@ -94,6 +94,7 @@ augroup END
 " sudo apt-get install -y cmake
 " ./install.py --ts-completer
 " pip install flake8
+" sudo apt install vim-gtk3 - fix copy to system clipboard
 
 " CREDITS:
 " https://youtu.be/n9k9scbTuvQ
