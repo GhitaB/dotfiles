@@ -86,6 +86,11 @@ augroup configgroup
   autocmd Filetype python setlocal tabstop=4 shiftwidth=4 expandtab colorcolumn=89
 augroup END
 
+" ALE config
+let g:ale_linters = {
+        \   'python': ['flake8', 'pylint', 'bandit', 'mypy', 'pycodestyle'],
+        \   'shell': ['shellcheck'],
+        \}
 " INSTALL:
 " Install vim-plug -> https://github.com/junegunn/vim-plug#installation
 " mkdir ~/.vim/undodir   in case it doen't exist
