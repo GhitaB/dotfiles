@@ -83,7 +83,7 @@ augroup configgroup
   autocmd BufWritePre * :call <SID>StripTrailingWhitespaces()
 
   autocmd FileType python setlocal commentstring=#\ %s
-  autocmd Filetype python setlocal tabstop=4 shiftwidth=4 expandtab colorcolumn=89
+  autocmd Filetype python setlocal tabstop=4 shiftwidth=4 expandtab
 augroup END
 
 " ALE config
