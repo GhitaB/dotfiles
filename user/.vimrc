@@ -19,6 +19,8 @@ set hlsearch        " highlight search matches
 set colorcolumn=80
 highlight ColorColumn ctermbg=0 guibg=lightgrey
 
+set shellcmdflag=-lc
+
 " https://github.com/junegunn/vim-plug
 call plug#begin('~/.vim/plugged')
 
@@ -154,6 +156,7 @@ let g:ale_sign_warning = "‼"
 " sudo apt-get install -y cmake
 " ./install.py --ts-completer
 " pip install flake8
+" pip install black
 " sudo apt install vim-gtk3 - fix copy to system clipboard
 
 " CREDITS:
