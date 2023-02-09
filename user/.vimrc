@@ -87,10 +87,100 @@ augroup configgroup
 augroup END
 
 " ALE config
+let g:ale_set_balloons = 0
+let g:ale_cursor_detail = 0
+let g:ale_virtualtext_cursor = 1
+let g:ale_virtualtext_prefix = "         ➜ "
+
+" let g:ale_python_flake8_executable = expand("$HOME/tools3/bin/flake8")
+" let g:ale_python_autopep8_executable = expand("$HOME/tools3/bin/autopep8")
+" let g:ale_python_black_executable = expand("$HOME/tools3/bin/black")
+" let g:ale_python_isort_executable = expand("$HOME/tools3/bin/isort")
+
+" let g:ale_python_pyls_executable = expand("$HOME/tools/bin/pyls")
+
+let g:ale_javascript_eslint_options = "--no-color"
+let g:ale_javascript_eslint_executable = "./eslint.sh"
+
+" expand("NODE_PATH=project/node_modules project/node_modules/.bin/eslint")
+
+"       \
+"'command':
+"
+" call ale#linter#Define('javascript', {
+"       \   'name': 'eslint',
+"       \   'output_stream': 'both',
+"       \   'executable': function('ale#handlers#eslint#GetExecutable'),
+"       \   'command': function('ale#handlers#eslint#GetCommand'),
+"       \   'callback': 'ale#handlers#eslint#HandleJSON',
+"       \})
+
+" \       'add_blank_lines_for_python_control_statements',
+" let g:ale_fixers = {
+"       \   'python': [
+"       \       'remove_trailing_lines',
+"       \       'autopep8',
+"       \       'isort',
+"       \   ],
+"       \   'javascript': ['eslint'],
+"       \   'css': ['stylelint'],
+"       \   'less': ['prettier'],
+"       \   'json': ['prettier']
+"       \}
+"
+" Available Linters: ['bandit', 'flake8', 'mypy', 'prospector', 'pycodestyle', 'pydocstyle', 'pyflakes', 'pylama', 'pylint', 'pyls', 'pyre', 'vulture']
+" Enabled Linters: ['flake8', 'mypy', 'pylint']
+" Suggested Fixers:
+" 'add_blank_lines_for_python_control_statements' - Add blank lines before control statements.
+" 'autopep8' - Fix PEP8 issues with autopep8.
+" 'black' - Fix PEP8 issues with black.
+" 'isort' - Sort Python imports with isort.
+" 'remove_trailing_lines' - Remove all blank lines at the end of a file.
+" 'reorder-python-imports' - Sort Python imports with reorder-python-imports.
+" 'trim_whitespace' - Remove all trailing whitespace characters at the end of every line.
+" 'yapf' - Fix Python files with yapf.
+
+let g:ale_fixers = {
+      \   'python': [
+      \       'black',
+      \       'isort',
+      \       'trim_whitespace',
+      \       'remove_trailing_lines',
+      \   ],
+      \   'javascript': ['eslint'],
+      \   'css': ['prettier', 'stylelint'],
+      \   'less': ['prettier', 'stylelint',],
+      \   'json': ['prettier']
+      \}
+
 let g:ale_linters = {
-        \   'python': ['flake8', 'pylint', 'bandit', 'mypy', 'pycodestyle'],
-        \   'shell': ['shellcheck'],
-        \}
+      \ 'python': ['flake8'],
+      \ 'javascript': ['eslint'],
+      \ 'xml': ['xmllint'],
+      \ 'css': ['stylelint'],
+      \ 'less': ['stylelint', 'lessc']
+      \ }
+
+" let g:ale_linters_explicit = 1
+" let g:ale_fix_on_save = 1
+"
+" let g:ale_javascript_prettier_options = '--single-quote --trailing-comma all'
+" let g:ale_stylelint_options = '--fix'
+
+
+" let g:ale_linters.python = ['pyls']   " use vim-lsp for python integration
+
+let g:ale_echo_msg_error_str = 'E'
+let g:ale_echo_msg_warning_str = 'W'
+let g:ale_echo_msg_format = '[%linter%] %s [%severity%]'
+
+let g:ale_sign_column_always = 0
+let g:ale_lint_on_save = 1
+let g:ale_fix_on_save = 1
+
+let g:ale_sign_error = "X"
+let g:ale_sign_warning = "‼"
+
 " INSTALL:
 " Install vim-plug -> https://github.com/junegunn/vim-plug#installation
 " mkdir ~/.vim/undodir   in case it doen't exist
