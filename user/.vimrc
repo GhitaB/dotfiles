@@ -87,30 +87,10 @@ augroup configgroup
 augroup END
 
 " ALE config
-let g:ale_fixers = {
-      \   'python': [
-      \       'black',
-      \       'isort',
-      \       'trim_whitespace',
-      \       'remove_trailing_lines',
-      \   ],
-      \   'javascript': ['eslint'],
-      \   'css': ['prettier', 'stylelint'],
-      \   'less': ['prettier', 'stylelint'],
-      \   'json': ['prettier']
-      \}
-
 let g:ale_linters = {
-      \ 'python': ['flake8'],
-      \ 'javascript': ['eslint'],
-      \ 'xml': ['xmllint'],
-      \ 'css': ['prettier', 'stylelint'],
-      \ 'less': ['prettier', 'stylelint'],
-      \ 'json': ['prettier']
-      \ }
-
-let g:ale_fix_on_save = 1
-
+        \   'python': ['flake8', 'pylint', 'bandit', 'mypy', 'pycodestyle'],
+        \   'shell': ['shellcheck'],
+        \}
 " INSTALL:
 " Install vim-plug -> https://github.com/junegunn/vim-plug#installation
 " mkdir ~/.vim/undodir   in case it doen't exist
