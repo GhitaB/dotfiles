@@ -38,6 +38,12 @@ Plug 'git@github.com:kien/ctrlp.vim.git'
 " Plug 'ycm-core/YouCompleteMe'
 Plug 'vim-airline/vim-airline'
 Plug 'ap/vim-css-color'
+Plug 'samoshkin/vim-mergetool'
+
+let g:mergetool_layout = 'mr'
+let g:mergetool_prefer_revision = 'local'
+" open mergetool with \mt
+nmap <leader>mt <plug>(MergetoolToggle)
 
 " Show indent guides
 Plug 'Yggdroot/indentLine'
