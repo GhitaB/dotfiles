@@ -112,6 +112,7 @@ let g:ale_virtualtext_prefix = "         ➜ "
 " 'trim_whitespace' - Remove all trailing whitespace characters at the end of every line.
 " 'yapf' - Fix Python files with yapf.
 
+autocmd BufNewFile,BufRead *.jsx setlocal filetype=javascript
 let g:ale_fixers = {
       \   'python': [
       \       'black',
