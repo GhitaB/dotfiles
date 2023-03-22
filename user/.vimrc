@@ -115,7 +115,7 @@ let g:ale_virtualtext_prefix = "         ➜ "
 autocmd BufNewFile,BufRead *.jsx setlocal filetype=javascript
 let g:ale_fixers = {
       \   'python': [
-      \       'black',
+      \       'autopep8',
       \       'isort',
       \       'trim_whitespace',
       \       'remove_trailing_lines',
