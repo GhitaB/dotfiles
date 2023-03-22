@@ -163,6 +163,7 @@ let g:ale_sign_warning = "‼"
 " sudo apt-get install -y cmake
 " ./install.py --ts-completer
 " pip install flake8
+" pip install autopep8
 " pip install black
 " sudo apt install vim-gtk3 - fix copy to system clipboard
 
