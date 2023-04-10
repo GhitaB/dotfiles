@@ -60,6 +60,7 @@ nnoremap <C-t> :NERDTreeToggle<CR>
 nnoremap <C-f> :NERDTreeFind<CR>
 let NERDTreeShowHidden=1
 let g:NERDTreeWinSize=40
+let NERDTreeIgnore = ['\.pyc$']
 
 set hidden
 nnoremap <C-right> :bnext<CR>
